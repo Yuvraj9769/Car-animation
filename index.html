@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("na.avif");
+        background-position: 0px 0px;
+        background-size: cover;
+        animation: anim 4s linear infinite normal;
+        background-repeat: repeat-x;
+        overflow: hidden;
+      }
+      @keyframes anim {
+        from {
+          background-position: 0px 0px;
+        }
+        to {
+          background-position: 5000px 0px;
+        }
+      }
+      .div {
+        position: relative;
+        height: 200px;
+        top: 430px;
+      }
+      .div > img {
+        position: absolute;
+        right: 10px;
+        animation: car 3s linear infinite normal;
+      }
+      .ltyre,
+      .rtyre {
+        height: 40px;
+        width: 60px;
+        background-color: black;
+        border-radius: 50%;
+        color: rgb(159, 214, 236);
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 20px;
+        border: 3px dotted rgb(156, 212, 235);
+        position: absolute;
+        font-weight: bold;
+      }
+      .ltyre {
+        right: 277px;
+        top: 39px;
+        animation: ltyre 3s linear infinite reverse;
+      }
+      .rtyre {
+        right: 60px;
+        top: 39px;
+        animation: rtyre 3s linear infinite reverse;
+      }
+
+      @keyframes car {
+        from {
+          right: 10px;
+        }
+        to {
+          right: 1200px;
+        }
+      }
+
+      @keyframes ltyre {
+        from {
+          transform: rotate(0deg);
+          right: 1470px;
+          top: 39px;
+        }
+        to {
+          transform: rotate(360deg);
+          right: 278px;
+          top: 39px;
+        }
+      }
+      @keyframes rtyre {
+        from {
+          transform: rotate(0deg);
+          right: 1250px;
+          top: 39px;
+        }
+        to {
+          transform: rotate(360deg);
+          right: 60px;
+          top: 39px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div">
+      <img
+        src="car-cartoon-2934017_1280.png"
+        alt="car image"
+        height="100px"
+        width="400px"
+      />
+      <div class="ltyre">.</div>
+      <div class="rtyre">.</div>
+    </div>
+  </body>
+</html>
