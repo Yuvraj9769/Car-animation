@@ -89,6 +89,87 @@
           top: 39px;
         }
       }
+
+       @media only screen and (min-width: 375px) and (max-width: 750px) {
+
+        body {
+        animation: anim 5s linear infinite normal;
+      }
+      @keyframes anim {
+        from {
+          background-position: 0px 0px;
+        }
+        to {
+          background-position: 4000px 0px;
+        }
+      }
+
+
+        .ltyre {
+          height: 15px;
+          width: 35px;
+          right: 105px;
+          font-size: 21px;
+          top: -297px;
+          text-align: center;
+          padding-bottom: 20px;
+          border: 2px dotted rgb(156, 212, 235);
+          animation: ltyresmall 5s linear infinite reverse;
+        }
+        @keyframes ltyresmall {
+          from {
+            transform: rotate(0deg);
+            right: 1330px;
+            top: -297px;
+          }
+          to {
+            transform: rotate(360deg);
+            right: 105px;
+            top: -297px;
+          }
+        }
+        .rtyre {
+          height: 15px;
+          width: 35px;
+          right: -5px;
+          top: -297px;
+          font-size: 21px;
+          text-align: center;
+          padding-bottom: 20px;
+          border: 2px dotted rgb(156, 212, 235);
+          animation: rtyresmall 5s linear infinite reverse;
+        }
+        @keyframes rtyresmall {
+          from {
+            transform: rotate(0deg);
+            right: 1230px;
+            top: -297px;
+          }
+          to {
+            transform: rotate(360deg);
+            right: -5px;
+            top: -297px;
+          }
+        }
+        .div img {
+          position: absolute;
+          right: -30px;
+          top: -320px;
+          height: 60px;
+          width: 209px;
+          animation: carsmall 5s linear infinite normal;
+        }
+        @keyframes carsmall {
+          from {
+            right: -30px;
+          }
+          to {
+            right: 1200px;
+          }
+        }
+        
+      }
+      
     </style>
   </head>
   <body>
